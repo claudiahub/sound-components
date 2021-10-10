@@ -2,21 +2,9 @@ import React from 'react';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import VintageRecorder from './components/VintageRecorder';
+import Copyright from './components/Copyright';
+import Recorder from './components/Recorder';
 import './global.css';
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://github.com/claudiahub">
-        Claudia Bressi
-      </Link>{' '}
-      {new Date().getFullYear()}.
-    </Typography>
-  );
-}
 
 const App = () => {
   return (
@@ -25,7 +13,7 @@ const App = () => {
         <Typography variant="h4" component="h1" align="center" gutterBottom>
           Visualize your music
         </Typography>
-         <VintageRecorder/>
+         <Recorder/>
         <Copyright />
       </Box>
     </Container>
